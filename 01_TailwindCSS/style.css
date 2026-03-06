@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+:root {
+  --border-default: 0.25rem solid red;
+
+  --w-xl: 3.25rem;
+}
+
+.my-class {
+  letter-spacing: 2px;
+  background-color: aqua;
+}
