@@ -15,6 +15,8 @@
 // 2.  **Specific Tasks**:
 
 //     *   Compare `5` and `'5'` using simple and strict equality.
+console.log(5 == '5');
+console.log(5 === '5');
 
 //     *   Compare `10` and `'10'` using simple and strict inequality.
 
@@ -23,5 +25,7 @@
 //     *   Evaluate whether `10` is less than `20` and if `'10'` is less than `'20'`.
 
 //     *   Determine if `5` is greater than or equal to `5` and if `'5'` is greater than or equal to `5`.
+console.log(5 >= 5);
+console.log(5 >= '15');
 
 //     *   Assess whether `10` is less than or equal to `20` and if `'10'` is less than or equal to `'20'`.
