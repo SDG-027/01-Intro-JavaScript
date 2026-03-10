@@ -20,7 +20,7 @@ console.log(number + strNumber);
 
 // 2.  **Subtraction with Mixed Types**
 //     *   Using the same string and number variables, subtract the string from the number and print the result.
-//     *   Explain why the output differs from the addition.
+    // *   Explain why the output differs from the addition.
 console.log(number - strNumber);
 
 // 3.  **Multiplication with a String**
