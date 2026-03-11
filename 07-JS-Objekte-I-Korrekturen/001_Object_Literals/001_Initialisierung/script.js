@@ -14,7 +14,37 @@
 //        pages: a number representing the total pages in the book.
 //        isRead: a boolean indicating if the book has been read or not.
 
+const book = {
+  title: "LOTR",
+  author: "Tolkien",
+  pages: 786,
+  isRead: true,
+  summary() {
+    return `
+Title: ${this.title}, 
+Author: ${this.author}, 
+Pages: ${this.pages},
+isRead: ${this.isRead ? "Yes" : "No"}`;
+  },
+
+  toString() {
+    return this.summary();
+  },
+};
+
+console.log(book.summary());
+
 // 3. Add a method named summary to the book object.
 //    This method should return a string summarizing the book details
 //    in the format:
 //        "Title: [title], Author: [author], Pages: [pages], Read: [Yes/No]"
+
+// TERNARY
+
+false ? console.log("Es ist wahr") : console.log("Es ist falsch");
+
+const isLongBook = book.pages > 800 ? "long book" : "a short read";
+
+console.log(isLongBook);
+
+console.log(`${book}`); // Objekt wird in string umgewandelt
