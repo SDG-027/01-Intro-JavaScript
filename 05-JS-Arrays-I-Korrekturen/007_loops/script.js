@@ -18,7 +18,15 @@ let numberArray = [10, 20, 30, 40, 50];
 //     *   Use a `for` loop to iterate over `numberArray`
 // and print each value to the console.
 
+for (let i = 0; i < numberArray.length; i++) {
+  console.log(numberArray[i]);
+}
+
 // 3.  **Iterate Over the Array with a `for...of` Loop:**
+
+for (const element of numberArray) {
+  console.log(element);
+}
 
 //     *   Use a `for...of` loop to iterate over `numberArray`
 // and print each value to the console.

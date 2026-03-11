@@ -14,6 +14,14 @@
 //  to the console.
 const array = [2, 4, 6, 8, 10, 12, 14, 16];
 
+// const slice1 = array.slice();
+// const slice1 = array.slice(3);
+// const slice1 = array.slice(3, 7);
+const slice1 = array.slice(3, -2);
+
+console.log(array);
+console.log(slice1);
+
 // Is the original array affected?
 
 // Extract different portions of the array and print the results

@@ -8,6 +8,14 @@
 // #### Instructions:
 
 // 1.  **Remove the element at index 2 and add 35 and 36:**
+const array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+array1.splice(1, 2, 35, 36, 99);
+console.log(array1);
+
+const array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const splicedArr2 = array2.toSpliced(1, 2, 35, 36, 99);
+console.log(array2);
+console.log(splicedArr2);
 
 //     *   The `splice` method can be used to remove elements, add elements,
 //  or both.

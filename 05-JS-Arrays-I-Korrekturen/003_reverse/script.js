@@ -14,6 +14,8 @@
 //     *   For example, `array1.reverse()` will change `array1` from `[1, 2, 3, 4, 5]` to `[5, 4, 3, 2, 1]`.
 // 2.  **Create a Reversed Copy of the Second Array:**
 const myArr = [1, 2, 3, 4, 5];
+myArr.reverse();
+myArr.toReversed();
 
 //     *   The `toReversed` method creates a new array that is the reversed version of the original array.
 //     *   This method does not modify the original array.

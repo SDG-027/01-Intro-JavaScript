@@ -15,13 +15,14 @@ const array = ["apple", "banana", "cherry", "date"];
 
 // Create different strings by joining the array elements with various delimiters
 // Default delimiter (comma)
-
-// console.log(myString.split("").reverse().join("").toUpperCase())
+console.log(array.join());
+console.log(array.join(", "));
 
 // Using dash as delimiter
 
 // Using space as delimiter;
 
 // Using ' and ' as delimiter
+console.log(array.join(" and "));
 
 // Without any delimiter
