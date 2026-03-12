@@ -16,6 +16,9 @@ const numbers = [1, 2, 3, 4, 5];
 // 2.  **Use the `forEach` Method to Print Each Number:**
 //     *   Use the `forEach` method to iterate over `numbers`
 //     *   and print each number to the console.
+numbers.forEach((number) => {
+  console.log(number);
+});
 
 // 3.  **Use the `forEach` Method to Calculate the Sum of the Numbers:**
 //     *   Initialize a variable `sum` to `0`.
@@ -23,8 +26,18 @@ const numbers = [1, 2, 3, 4, 5];
 //     *   adding each number to `sum`.
 //     *   Print the final value of `sum` to the console.
 
+let sum = 0;
+numbers.forEach((num) => (sum += num));
+console.log(`sum: ${sum}`);
+
 // 4.  **Use the `forEach` Method to Create a New Array with Squared Values:**
 //     *   Create an empty array called `squaredNumbers`.
 //     *   Use the `forEach` method to iterate over `numbers`,
 //     *   squaring each number and adding the squared value to `squaredNumbers`.
 //     *   Print the `squaredNumbers` array to the console.
+const squaredNumbers = [];
+
+// numbers.forEach((num, index) => (squaredNumbers[index] = num * num));
+numbers.forEach((num) => squaredNumbers.push(num * num));
+
+console.log(squaredNumbers);

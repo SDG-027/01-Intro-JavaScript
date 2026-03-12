@@ -17,12 +17,19 @@ const numbers = [1, 2, 3, 4, 5];
 //     *   `doubledNumbers` where each value is double the corresponding
 //     *   value in `numbers`.
 //     *   Print the `doubledNumbers` array to the console.
+const newArr = numbers.map((elem) => elem * 2);
+
+console.log(newArr);
 
 // 3.  **Use the `map` Method to Create a New Array of Strings:**
 //     *   Use the `map` method to create a new array called
 //     *   `stringNumbers` where each value is the corresponding number
 //     *   in `numbers` converted to a string with the prefix "Number: ".
 //     *   Print the `stringNumbers` array to the console.
+
+const stringNumbers = numbers.map((number) => `Number: ${number}`);
+
+console.log(stringNumbers);
 
 // 4.  **Use the `map` Method to Create a New Array of Objects:**
 //     *   Use the `map` method to create a new array called
@@ -34,3 +41,9 @@ const numbers = [1, 2, 3, 4, 5];
 //   orginal: 4,
 //   squared: 16
 // }
+
+const numberObjects = numbers.map((num) => ({
+  original: num,
+  squared: num * num,
+}));
+console.log(numberObjects);

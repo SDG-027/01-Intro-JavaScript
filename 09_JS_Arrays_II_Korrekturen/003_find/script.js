@@ -16,6 +16,9 @@ const numbers = [10, 20, 30, 40, 50];
 //     *   that is greater than `25`.
 //     *   Print the found number to the console.
 
+const firstGreater25 = numbers.find((num) => num >= 25);
+console.log(firstGreater25);
+
 // 3.  **Initialize an Array of Objects:**
 //     *   Create an array called `people` containing the following objects:
 //         *   `{ name: "Alice", age: 25 }`
@@ -23,7 +26,24 @@ const numbers = [10, 20, 30, 40, 50];
 //         *   `{ name: "Charlie", age: 35 }`
 //         *   `{ name: "David", age: 40 }`
 
+const people = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 35 },
+  { name: "David", age: 40 },
+];
+
+console.log(people[1].name);
+console.log(people[3].age);
+
+console.log(people.at(-1).name);
+console.log(people[people.length - 1]);
+
 // 4.  **Use the `find` Method to Locate a Person Named "Charlie":**
 //     *   Use the `find` method to locate the first object in
 //     *   `people` where the `name` property is `"Charlie"`.
 //     *   Print the found object to the console.
+
+const charlie = people.find((person) => person.name === "Charlie");
+
+console.log(charlie);

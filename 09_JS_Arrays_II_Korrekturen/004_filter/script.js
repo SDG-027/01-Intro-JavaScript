@@ -10,12 +10,16 @@
 // 1.  **Initialize an Array of Numbers:**
 
 //     *   Create an array called `numbers` containing the following values in order: `5`, `10`, `15`, `20`, `25`, `30`.
-const numbers = [5, 10, 15, 20, 25, 30];
+const numbers = [5, 25, 15, 20, 30, 10];
 
 // 2.  **Use the `filter` Method to Create a New Array with Numbers
 //  Greater Than 15:**
 //     *   Use the `filter` method to create a new array called `numbersGreaterThan15` containing all numbers from `numbers` that are greater than `15`.
 //     *   Print the `numbersGreaterThan15` array to the console.
+
+const numbersGreaterThan15 = numbers.filter((n) => n > 15);
+
+console.log(numbersGreaterThan15);
 
 // 3.  **Initialize an Array of Objects:**
 
@@ -28,7 +32,7 @@ const numbers = [5, 10, 15, 20, 25, 30];
 
 const students = [
   { name: "Alice", grade: 85 },
-  { name: "Bob", grade: 92 },
+  { name: "Bob", grade: 62 },
   { name: "Charlie", grade: 78 },
   { name: "David", grade: 87 },
   { name: "Eve", grade: 95 },
@@ -39,4 +43,7 @@ const students = [
 
 //     *   Use the `filter` method to create a new array called `studentsAbove80` containing all students from `students` who scored above `80`.
 //     *   Print the `studentsAbove80` array to the console.
-// const studentsAbove80 = students.filter(student => student.grade > 80)
+
+const studentsAbove80 = students.filter((s) => s.grade > 80);
+
+console.log(studentsAbove80);
